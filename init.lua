@@ -1,4 +1,5 @@
 require("nathaniel")
+require("nathaniel.set")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -22,8 +23,6 @@ for _, file in ipairs(plugin_files) do
 	dofile(file)
 end
 
-vim.cmd([[set undofile]])  -- Enable persistent undo
-vim.cmd([[set undodir=~/.config/nvim/undo]])  -- Set the undo directory
  -- LSP setup
  vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('user_lsp_attach', {clear = true}),
