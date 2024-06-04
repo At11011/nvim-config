@@ -1,5 +1,3 @@
-vim.g.maplocalleader = " "
-
 require("nathaniel")
 require("nathaniel.set")
 

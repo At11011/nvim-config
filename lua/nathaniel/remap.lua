@@ -67,3 +67,5 @@ end)
 vim.api.nvim_set_keymap('n', '<leader>w', ':split<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>s', ':vsplit<CR>', { noremap = true, silent = true })
 
+-- Easy terminal
+vim.api.nvim_set_keymap('n', '<leader>t', ':belowright split | terminal<CR>', { noremap = true, silent = true })
