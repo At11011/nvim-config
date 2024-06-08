@@ -1,1 +1,5 @@
 require("nathaniel.remap")
+require("nathaniel.set")
+require("nathaniel.rust")
+require("nathaniel.mouse_support")
+require("nathaniel.terminal")

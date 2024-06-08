@@ -67,5 +67,10 @@ end)
 vim.api.nvim_set_keymap('n', '<leader>w', ':split<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>s', ':vsplit<CR>', { noremap = true, silent = true })
 
--- Easy terminal
-vim.api.nvim_set_keymap('n', '<leader>t', ':belowright split | terminal<CR>', { noremap = true, silent = true })
+-- Map <leader>` to the toggle_term function
+vim.api.nvim_set_keymap("n", "<leader>`", ":lua toggle_term()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("t", "<leader>`", "<C-\\><C-n>:lua toggle_term()<CR>", { noremap = true, silent = true })
+
+-- Close windows with <leader>t
+vim.api.nvim_set_keymap("t",  "<C-t>", "<C-\\><C-n>:lua close_current_window()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n",  "<leader>t", ":q<CR>", { noremap = true, silent = true })

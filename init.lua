@@ -1,6 +1,10 @@
 require("nathaniel")
 require("nathaniel.set")
 
+-- Enable filetype detection
+
+vim.cmd('filetype on')
+-- Install Lazy if it hasn't been installed yet
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	vim.fn.system({
