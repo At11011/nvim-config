@@ -2,6 +2,7 @@ require("nathaniel")
 require("nathaniel.set")
 
 -- Enable filetype detection
+vim.g.maplocalleader = ','
 
 vim.cmd('filetype on')
 -- Install Lazy if it hasn't been installed yet
