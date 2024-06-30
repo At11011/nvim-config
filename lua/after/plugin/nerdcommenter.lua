@@ -25,3 +25,6 @@ vim.g.NERDTrimTrailingWhitespace = 1
 -- Enable NERDCommenterToggle to check all selected lines are commented or not
 vim.g.NERDToggleCheckAllLines = 1
 
+vim.api.nvim_exec([[
+  autocmd FileType * nmap <buffer> <silent> <leader><CR> <Plug>NERDCommenterInsert<CR>
+]], false)
