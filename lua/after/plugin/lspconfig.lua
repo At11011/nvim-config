@@ -11,3 +11,16 @@ lspconfig.clangd.setup {
     -- end,
     -- capabilities = capabilities,
 }
+lspconfig.julials.setup{}
+lspconfig.pylsp.setup{
+  --     settings = {
+  --   pylsp = {
+  --     plugins = {
+  --       pycodestyle = {
+  --         ignore = {'W391'},
+  --         maxLineLength = 100
+  --       }
+  --     }
+  --   }
+  -- }
+}
