@@ -24,6 +24,22 @@ vim.g.vimtex_view_method = 'okular'
 -- Most VimTeX mappings rely on localleader and this can be changed with the
 -- following line. The default is usually fine and is the symbol "\".
 -- vim.g.maplocalleader = '\\'
+vim.g.vimtex_compiler_method = 'latexmk'
+
+vim.g.vimtex_compiler_latexmk = {
+  build_dir = '',
+  callback = 1,
+  continuous = 1,
+  executable = 'latexmk',
+  hooks = {},
+  options = {
+    '-verbose',
+    '-file-line-error',
+    '-synctex=1',
+    '-interaction=nonstopmode',
+    '-pdflatex'
+  },
+}
 
 vim.g.vimtex_compiler_latexmk = {
   build_dir = '',
