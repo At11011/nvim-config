@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "javascript", "rust", "cpp", "c", "lua", "vim", "vimdoc", "query", "julia"},
+  ensure_installed = { "javascript", "rust", "cpp", "c", "lua", "vim", "vimdoc", "julia"},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -16,7 +16,7 @@ require'nvim-treesitter.configs'.setup {
   -- parser_install_dir = "/some/path/to/store/parsers", -- Remember to run vim.opt.runtimepath:append("/some/path/to/store/parsers")!
 
   highlight = {
-    enable = true,
+    -- enable = true,
 
     disable = { "latex" },
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
