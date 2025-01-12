@@ -1,4 +1,3 @@
 return {
-	'nvim-treesitter/nvim-treesitter',
-	run = ':TSUpdate'
+    "https://github.com/nvim-treesitter/nvim-treesitter"
 }
