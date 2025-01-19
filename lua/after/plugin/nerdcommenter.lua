@@ -8,7 +8,7 @@ vim.g.NERDSpaceDelims = 1
 vim.g.NERDCompactSexyComs = 1
 
 -- Align line-wise comment delimiters flush left instead of following code indentation
-vim.g.NERDDefaultAlign = 'left'
+vim.g.NERDDefaultAlign = "left"
 
 -- Set a language to use its alternate delimiters by default
 -- vim.g.NERDAltDelims_java = 1
@@ -25,6 +25,9 @@ vim.g.NERDTrimTrailingWhitespace = 1
 -- Enable NERDCommenterToggle to check all selected lines are commented or not
 vim.g.NERDToggleCheckAllLines = 1
 
-vim.api.nvim_exec([[
+vim.api.nvim_exec(
+	[[
   autocmd FileType * nmap <buffer> <silent> <leader><CR> <Plug>NERDCommenterInsert<CR>
-]], false)
+]],
+	false
+)

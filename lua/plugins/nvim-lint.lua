@@ -1,3 +1,3 @@
 return {
-    "https://github.com/mfussenegger/nvim-lint"
+	"https://github.com/mfussenegger/nvim-lint",
 }

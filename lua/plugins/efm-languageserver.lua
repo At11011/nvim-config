@@ -1,3 +1,3 @@
 return {
-    "mattn/efm-langserver"
+	"mattn/efm-langserver",
 }

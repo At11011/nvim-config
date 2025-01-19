@@ -1,3 +1,3 @@
 return {
-    "JuliaEditorSupport/julia-vim"
+	"JuliaEditorSupport/julia-vim",
 }

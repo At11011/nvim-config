@@ -1,3 +1,3 @@
 return {
-    "rhysd/vim-clang-format"
+	"rhysd/vim-clang-format",
 }
