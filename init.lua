@@ -1,6 +1,9 @@
 require("nathaniel")
 require("nathaniel.set")
 
+-- Fold markers
+vim.o.foldmethod = "marker"
+
 -- Enable filetype detection
 vim.g.maplocalleader = ","
 
