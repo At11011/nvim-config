@@ -11,6 +11,7 @@ require("nvim-treesitter.configs").setup({
 		"markdown_inline",
 		"hyprlang",
 		"julia",
+		"python",
 	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)
